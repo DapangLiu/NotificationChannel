@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.dartmouth.cs.notificationchannel.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_notes"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Notes"
+        android:onClick="buildNotesNotification"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="47dp"/>
+
+    <Button
+        android:id="@+id/btn_grades"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grades"
+        android:onClick="buildGradesNotification"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="124dp"/>
+
+    <Button
+        android:id="@+id/btn_faq"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:onClick="buildFAQNotification"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="208dp"/>
+</LinearLayout>
