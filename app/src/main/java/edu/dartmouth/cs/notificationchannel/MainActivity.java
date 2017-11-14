@@ -102,7 +102,11 @@ public class MainActivity extends AppCompatActivity {
 						"class grades channel",
 						NotificationManager.IMPORTANCE_HIGH);
 		gradesChannel.setGroup(GROUP_COURSE_GRADES);
+
+		// Show Badge, and vibrate
 		gradesChannel.setShowBadge(true);
+		gradesChannel.enableVibration(true);
+		gradesChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
 		notificationManager.createNotificationChannel(gradesChannel);
 	}
 
@@ -112,6 +116,10 @@ public class MainActivity extends AppCompatActivity {
 						"class notes channel",
 						NotificationManager.IMPORTANCE_LOW);
 		notesChannel.setGroup(GROUP_COURSE_NOTES);
+
+		// Set this channel's lights
+		notesChannel.enableLights(true);
+		notesChannel.setLightColor(Color.GREEN);
 		notificationManager.createNotificationChannel(notesChannel);
 	}
 }
